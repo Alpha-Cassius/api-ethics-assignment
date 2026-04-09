@@ -17,6 +17,7 @@ Your team's data collection script is shown below:
 import requests
 
 API_URL = "https://healthstats-api.example.com/records"
+
 API_KEY = "free_tier_key_abc123"
 
 records = []
