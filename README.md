@@ -14,7 +14,6 @@ For each field, state whether you would drop it, mask it, or pseudonymize it bef
 ## Task 2 — Audit the API Script for Ethical Compliance
 Your team's data collection script is shown below:
 
-'''
 import requests
 
 API_URL = "https://healthstats-api.example.com/records"
@@ -25,7 +24,6 @@ for page in range(1, 101):
     response = requests.get(API_URL, params={"page": page, "key": API_KEY})
     data = response.json()
     records.extend(data["results"])
-'''
 
 # Store all records permanently in company database
 save_to_database(records)
